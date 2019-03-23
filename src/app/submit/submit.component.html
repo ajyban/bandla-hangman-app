@@ -1,0 +1,8 @@
+<ul id="messages">
+  <li *ngFor="let msg of messages">
+    {{msg}}
+  </li>
+</ul>
+<form (ngSubmit)="onSubmit($event)">
+  <input id="m" name="enterMsg" [(ngModel)]="userMsg" /><button type="submit">Send</button>
+</form>
