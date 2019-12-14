@@ -9,7 +9,7 @@ import * as io from 'socket.io-client';
 export class SubmitComponent implements OnInit {
   private socket;
   constructor() {
-    this.socket = io('http://localhost:3000');
+    this.socket = io();
    }
   userMsg;
   messages = [];
